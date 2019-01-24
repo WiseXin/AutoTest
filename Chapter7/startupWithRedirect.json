@@ -1,0 +1,9 @@
+[
+  {
+    "description": "重定向百度",
+    "request": {
+      "uri": "/redirect"
+    },
+    "redirectTo": "http://www.baidu.com"
+  }
+]

@@ -1,1 +1,3 @@
-java -jar ./moco-runner-0.12.0-standalone.jar http -p 8888 -c startup.json
+java -jar ./moco-runner-0.12.0-standalone.jar http -p 8888 -c startupPost.json
+
+报错：Unable to access jarfile 一般是未进入moco jar包目录

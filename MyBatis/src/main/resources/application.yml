@@ -1,0 +1,25 @@
+#配置文件
+server:
+  port: 8888
+
+logging:
+#path:是路径,会在同级文件下生成logs文件夹，同时映射到logback.xml配置文件
+  path: logs
+  file: mylog.log
+
+#spring配置名字
+#配置数据库连接，及用户名与密码
+spring:
+  application:
+    name: myTest
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.2.154:3306/course
+    username: root
+    password: 123456789
+
+#mybatis配置
+mybatis:
+  type-aliases-package: com.course.model
+  mapper-locations:
+    - mapper/*        #映射resources文件夹下mapper文件夹下的文件，加载mapper下的所有xml文件

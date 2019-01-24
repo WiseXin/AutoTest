@@ -1,0 +1,58 @@
+[
+  {
+    "description": "这是一个会返回cookies信息的get请求",
+    "request": {
+      "uri": "/getCookies",
+      "method": "get"
+    },
+    "response": {
+      "text": "获得cookies信息成功",
+      "cookies": {
+        "Login": "true"
+      },
+      "headers": {
+        "Content-Type": "text/html;charset=gbk"
+      }
+    }
+  },
+  {
+    "description": "这是一个携带cookies信息才能访问的get请求",
+    "request": {
+      "uri": "/get/with/cookies",
+      "method": "get",
+      "cookies": {
+        "Login": "true"
+      }
+    },
+    "response": {
+      "text": "这是携带cookies才能访问的get请求",
+      "headers": {
+        "Content-Type": "text/html;charset=gbk"
+      }
+    }
+  },
+  {
+    "description": "这是一个带cookies与json的post请求；发送请求时需要添加头文件Content-Type：application/json",
+    "request": {
+      "uri": "/post/with/cookies",
+      "method": "post",
+      "cookies": {
+        "Login": "true"
+      },
+      "json": {
+        "name": "xin",
+        "age": "22"
+      }
+    },
+    "response": {
+      "status": 200,
+      "json": {
+        "xin": "success",
+        "status": "1"
+      },
+      "headers": {
+        "Content-Type": "text/html;charset=gbk"
+      }
+    }
+  }
+]

@@ -11,5 +11,22 @@
         "Content-Type": "text/html;charset=gbk"
       }
     }
+  },
+  {
+    "description": "模拟一个带参的post请求",
+    "request": {
+      "uri": "/postwithparam",
+      "method": "post",
+      "forms": {
+        "name": "xin",
+        "sex": "man"
+      }
+    },
+    "response": {
+      "text": "这是一个带参的Post请求",
+      "headers": {
+        "Content-Type": "text/html;charset=gbk"
+      }
+    }
   }
 ]
